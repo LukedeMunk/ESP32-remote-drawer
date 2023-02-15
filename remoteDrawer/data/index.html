@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Draw something</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-device-width: 699px)" href="style_mobile.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body onload="init()">
+        <script src="jquery.min.js"></script>
+
+        <script>
+            var color = "%COLOR%";
+            var lineWidth = "%LINE_WIDTH%";
+        </script>
+
+        <h2>Draw something</h2>
+
+        <div class="container-form">
+            <div class="wrap-form">
+                <form class="form">
+                    <canvas id="can" class="canvas" width="160" height="80"></canvas><br>
+                    <p>Color:</p>
+                    <input type="color" id="color" value="#%COLOR%"/>
+                    <p>Line width:</p>
+                    <input style="background: transparent;" type="range" min="1" max="30" value="%LINE_WIDTH%" name="lineWidth" id="lineWidth"/><br><br>
+                    <input type="button" class ="button" value="pencil" id="pencil" onclick="setPencil()">
+                    <input type="button" class ="button" value="eraser" id="eraser" onclick="setEraser()">
+                    <input type="button" class ="button" value="clear" id="clear" onclick="erase()"><br>
+                </form>
+            </div>
+        </div>
+
+        <img id="canvas_img" style="display:none;">
+        
+        <script src="base.js"></script>
+    </body>
+</html>

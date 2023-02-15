@@ -1,0 +1,12 @@
+body {
+    font-size: medium;
+}
+
+.page {
+    left: 5%;
+    width: 90%;
+}
+
+.wrap-form {
+    padding: 90px 10px 90px 10px;
+}
