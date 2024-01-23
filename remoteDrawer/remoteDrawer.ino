@@ -35,8 +35,8 @@
 #define ERASER              1
 
 /* Network */
-#define SSID                "Wifi Boven"
-#define PASSWORD            "abCDef1245"
+#define SSID                "XX"
+#define PASSWORD            "XX"
 AsyncWebServer server(80);                                                  //Create AsyncWebServer object on port 80
 
 Adafruit_ST7735 tft = Adafruit_ST7735(CS_PIN, DC_PIN, RST_PIN);             //Initialise display object
